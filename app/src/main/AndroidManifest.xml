@@ -13,9 +13,16 @@
         android:theme="@style/Theme.T13"
         tools:targetApi="31">
         <activity
-            android:name=".T14"
-            android:label="@string/T14"
+            android:name=".T15"
             android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".T14"
+            android:exported="false"
+            android:label="@string/T14">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

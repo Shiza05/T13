@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".T15">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="455dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <VideoView
+            android:id="@+id/vvv1"
+            android:layout_width="wrap_content"
+            android:layout_height="220dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:background="@drawable/background"
+            android:backgroundTint="@color/black"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnv_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/reproducir"
+                android:backgroundTint="@color/white"
+                app:backgroundTint="@null" />
+
+
+            <Button
+                android:id="@+id/btnv_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/detener"
+                android:backgroundTint="@color/white"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btn_ant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:drawable/ic_media_previous"
+                android:backgroundTint="@color/white"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btnv_anterior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:drawable/ic_media_rew"
+                android:backgroundTint="@color/black"
+                app:backgroundTint="@color/white" />
+
+            <Button
+                android:id="@+id/btnv_siguiente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:drawable/ic_media_ff"
+                android:backgroundTint="@color/black"
+                app:backgroundTint="@color/white" />
+
+            <Button
+                android:id="@+id/btn_sig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:drawable/ic_media_next"
+                android:backgroundTint="@color/white"
+                app:backgroundTint="@null" />
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seek1"
+            android:layout_width="match_parent"
+            android:layout_height="11dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/timeLapse"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,7 +3,6 @@ package com.example.t13;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.res.ColorStateList;
-import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
@@ -80,9 +79,9 @@ public class T14 extends AppCompatActivity {
         /////////////////////////////////////////////////
         btn_play = (Button) findViewById(R.id.btn_play);
         btn_repetir = (Button) findViewById(R.id.btn_repetir);
-        btn_siguiente = (Button) findViewById(R.id.btn_siguiente);
+        btn_siguiente = (Button) findViewById(R.id.btnv_siguiente);
         btn_stop = (Button) findViewById(R.id.btn_stop);
-        btn_anterior = (Button) findViewById(R.id.btn_anterior);
+        btn_anterior = (Button) findViewById(R.id.btnv_anterior);
         sk_song = (SeekBar) findViewById(R.id.sk_song);
         tv1 = (TextView) findViewById(R.id.tv1);
         tv2 = (TextView) findViewById(R.id.tv2);
